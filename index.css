@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 60%, 98%);
+}
+
+.main-container{
+    background-color: hsl(0, 0%, 100%);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications-heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#total-notifications{
+    font-size: 25px;
+    font-weight: 500;
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#mark-all-read{
+    color: hsl(219, 12%, 42%);
+    font-size: 17px;
+}
+
+#mark-all-read:hover{
+    cursor: pointer;
+}
+
+.notifications-container{
+    margin-top: 25px;
+}
+
+.notification-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.unread{
+    background-color: hsl(210, 60%, 98%);
+}
+
+
+.profile-picture{
+    width: 50px;
+    height: 50px;
+}
+
+.commented-picture{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.notification-data{
+    margin-left: 15px;
+    flex: 1;
+}
+
+
+.notification-title{
+    font-size: 16px;
+    color: hsl(219, 12%, 42%);
+    letter-spacing: 0.2px;
+}
+
+.unread .notification-title::after{
+    content: ".";
+    color: hsl(1, 90%, 64%);
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+.person-name{
+    font-weight: 600;
+    color: hsl(224, 21%, 14%);
+    text-transform: capitalize;
+}
+
+.post-name{
+    font-weight: 600;
+    
+}
+
+.group-name{
+    color: hsl(219, 85%, 26%);
+    font-weight: 600;
+    
+}
+
+.person-name:hover, .post-name:hover, .group-name:hover{
+    cursor: pointer;
+    color :hsl(219, 85%, 26%)
+}
+
+.time{
+    display: block;
+    margin-top: 2px;
+    color: hsl(219, 14%, 63%);
+}
+
+.message{
+    font-size: 17px;
+    color: hsl(219, 12%, 42%);
+    letter-spacing: 0.2px;
+    border: 1px solid hsl(219, 12%, 42%);
+    padding: 10px;
+    margin-left: 75px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .main-container{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        padding: 20px 15px;
+        
+    }
+    
+    .profile-picture{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .commented-picture{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+   
+ 
+    
+}
