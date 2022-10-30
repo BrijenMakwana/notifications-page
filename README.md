@@ -14,6 +14,7 @@
 ## Screenshot
 
 ![](./images/preview_1.png)
+![](./images/preview_2.png)
 
 
 ## Links
