@@ -19,7 +19,7 @@
 
 ## Links
 
-- Live Site URL: []()
+- Live Site URL: [https://notifications-page-brijen.vercel.app](https://notifications-page-brijen.vercel.app)
 
 ## Built with
 
